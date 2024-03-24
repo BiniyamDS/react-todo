@@ -16,4 +16,4 @@ Redone in `react`
 ## Extended features
 
 - [x] Option to clear all completed todos
-- [ ] Option to edit todos
+- [x] Option to edit todos
