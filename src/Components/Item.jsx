@@ -1,11 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useTodoStore } from './useTodoStore';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 const Item = ({ item }) => {
-  const { updateStatus } = useTodoStore();
+  const { updateStatus, deleteTodo } = useTodoStore();
 
   return (
-    <div className='border-amber-100 mb-6'>
+    <div className='border-amber-100 mb-6 flex'>
       <input
         type='checkbox'
         onChange={() => updateStatus(item.id)}
@@ -20,6 +22,12 @@ const Item = ({ item }) => {
       >
         {item.text}
       </label>
+      <button
+        className='ml-auto'
+        onClick={() => deleteTodo(item.id)}
+      >
+        <FontAwesomeIcon icon={faTrashCan} />
+      </button>
     </div>
   );
 };

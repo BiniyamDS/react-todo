@@ -10,7 +10,7 @@ Redone in `react`
 - [x] Add todo input textbox
 - [x] Make todo list stateful using zustand store
 - [x] Add new Todos
-- [ ] Delete todo
+- [x] Delete todo
 - [ ] Store in local storage for persistence
 
 ## Extended features

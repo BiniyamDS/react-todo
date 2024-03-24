@@ -23,7 +23,7 @@ export const useTodoStore = create(set => ({
       ],
     })),
   deleteTodo: id =>
-    set(state => ({ todos: state.todo.filter(item => item.id !== id) })),
+    set(state => ({ todos: state.todos.filter(item => item.id !== id) })),
 }));
 
 export const useTodos = () => useTodoStore(state => state.todos);
