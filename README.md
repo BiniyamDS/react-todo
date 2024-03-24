@@ -2,7 +2,7 @@
 Redone in /react
 things to do
 + [x] add empty notes functionality
-+ [ ] circular checkbox
++ [x] circular checkbox
 + [ ] add todo button
 + [ ] add todo modal
 + [ ] delete todo

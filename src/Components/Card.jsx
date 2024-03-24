@@ -2,8 +2,8 @@
 
 const Card = ({ children }) => {
   return (
-        <div className="bg-white p-6 shadow-lg rounded-xl w-2/5">
-            <h1 className="text-2xl font-bold">Todo</h1>
+        <div className="bg-white p-10 shadow-lg rounded-3xl w-1/3">
+            <h1 className="font-bold text-4xl mb-8">Todo</h1>
             {children}
         </div>
   )

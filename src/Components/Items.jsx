@@ -1,5 +1,6 @@
 import Item from "./Item"
 
+// Dummy data
 const todos = [
     {
         id: 1,
@@ -26,6 +27,7 @@ const Items = () => {
 			{isEmpty ? <p className="text-gray-400 mx-auto py-8">No todos yet</p> : todos.map((item) => (
 				<Item key={item.id} item={item}/>))}
 			</ul>
+      
       <button className="bg-gray-300 w-full rounded-lg p-2 mt-2">Add Todo</button>
     </div>
   )
