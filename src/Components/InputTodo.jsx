@@ -14,6 +14,9 @@ const InputTodo = ({ toggle }) => {
       addTodo(event.target.value);
       event.target.value = '';
     }
+    if (event.key === 'Escape') {
+      toggle();
+    }
   }
 
   useEffect(() => ref.current.focus(), []);
@@ -30,7 +33,10 @@ const InputTodo = ({ toggle }) => {
         id='todo-input'
       />
       <button onClick={toggle}>
-        <FontAwesomeIcon className='w-6 h-6' icon={faXmark} />
+        <FontAwesomeIcon
+          className='w-6 h-6'
+          icon={faXmark}
+        />
       </button>
     </div>
   );

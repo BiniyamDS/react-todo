@@ -27,6 +27,8 @@ export const useTodoStore = create(
         })),
       deleteTodo: id =>
         set(() => ({ todos: get().todos.filter(item => item.id !== id) })),
+      clearCompleted: () =>
+        set(() => ({ todos: get().todos.filter(item => !item.complete) })),
     }),
     {
       name: 'TODO_LIST',

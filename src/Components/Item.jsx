@@ -18,14 +18,12 @@ const Item = ({ item }) => {
       />
       <label
         className={item.complete ? 'text-xl text-gray-400' : 'text-xl'}
-        htmlFor='todo'
-      >
+        htmlFor='todo'>
         {item.text}
       </label>
       <button
         className='ml-auto'
-        onClick={() => deleteTodo(item.id)}
-      >
+        onClick={() => deleteTodo(item.id)}>
         <FontAwesomeIcon icon={faTrashCan} />
       </button>
     </div>
