@@ -25,7 +25,7 @@ const InputTodo = ({ toggle }) => {
     <div className='flex'>
       <input
         ref={ref}
-        className='border-b-2 w-full outline-none h-10 text-2xl'
+        className='input-field'
         type='text'
         placeholder='Enter your todos'
         onKeyDown={handleKeyDown}

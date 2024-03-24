@@ -8,3 +8,11 @@
   clip-path: circle(50% at 50% 50%);
   background-color: #dcdcdc;
 }
+
+.input-field {
+  @apply border-b-2 w-full outline-none h-10 text-2xl;
+}
+
+.btn {
+  @apply mr-1 p-2 rounded-lg my-2 text-white
+}

@@ -13,7 +13,7 @@ const Card = ({ children }) => {
     setShow(prevShow => !prevShow);
   }
   return (
-    <div className='bg-white p-10 shadow-lg rounded-3xl w-1/2'>
+    <div className='bg-white p-10 shadow-lg rounded-3xl w-1/4'>
       <div className='flex'>
         <h1 className='font-bold text-4xl mb-8'>Todo</h1>
         {showClear && (

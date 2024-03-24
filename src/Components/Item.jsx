@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useTodoStore } from './useTodoStore';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import MicroModal from 'react-micro-modal';
+import { EditModal } from './EditModal';
 
 const Item = ({ item }) => {
   const { updateStatus, deleteTodo } = useTodoStore();
@@ -21,8 +23,23 @@ const Item = ({ item }) => {
         htmlFor='todo'>
         {item.text}
       </label>
+      <MicroModal
+        trigger={open => (
+          <button
+            className='ml-auto'
+            onClick={open}>
+            <FontAwesomeIcon icon={faPenToSquare} />
+          </button>
+        )}>
+        {close => (
+          <EditModal
+            close={close}
+            item={item}
+          />
+        )}
+      </MicroModal>
       <button
-        className='ml-auto'
+        className='ml-4'
         onClick={() => deleteTodo(item.id)}>
         <FontAwesomeIcon icon={faTrashCan} />
       </button>

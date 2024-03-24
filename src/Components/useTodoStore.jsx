@@ -29,6 +29,15 @@ export const useTodoStore = create(
         set(() => ({ todos: get().todos.filter(item => item.id !== id) })),
       clearCompleted: () =>
         set(() => ({ todos: get().todos.filter(item => !item.complete) })),
+      updateTodo: (id, text) =>
+        set(() => ({
+          todos: get().todos.map(item => {
+            if (item.id === id) {
+              return { ...item, text: text };
+            }
+            return item;
+          }),
+        })),
     }),
     {
       name: 'TODO_LIST',
