@@ -4,10 +4,10 @@ Redone in `react`
 + [x] Add empty notes functionality
 + [x] Circular checkbox
 + [x] Add todo button
-+ [x] Add todo modal
++ [x] Add todo input textbox
++ [x] Make todo list stateful using zustand store
++ [ ] Add new Todos
 + [ ] Delete todo
-+ [ ] Mark todo as complete
-+ [ ] Make todo list stateful using zustand store
 + [ ] Store in local storage for persistence
 ## Extended features
 + [ ] Option to clear all completed todos
