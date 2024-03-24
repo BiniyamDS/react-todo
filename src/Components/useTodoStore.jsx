@@ -2,29 +2,18 @@ import { create } from "zustand";
 
 export const useTodoStore = create((set) => (
     {
-        todos: [
-            {
-                id: 1,
-                text: 'Finish writing doc',
-                complete: true,
-            },
-            {
-                id: 2,
-                text: 'Share update with team',
-                complete: false,
-            },
-            {
-                id: 3,
-                text: 'Pre-launch checklist',
-                complete: false,
-            }
-        ],
+        todos: [],
         updateStatus: (id) => set((state) => ({todos: state.todos.map((item) => {
             if (item.id === id) {
                 return ({...item, complete:!item.complete})
             }
             return item
-        })}))
+        })})),
+        addTodo: (value) => set((state) => ({todos: [...state.todos, {
+            id: Math.floor(Math.random() * 1000),
+            text: value,
+            complete: false
+        }]}))
     }
 ))
 

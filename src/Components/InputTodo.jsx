@@ -3,13 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faXmark } from "@fortawesome/free-solid-svg-icons"
 import { useRef } from "react"
 import { useEffect } from "react"
+import { useTodoStore } from "./useTodoStore"
 
 const InputTodo = ({ toggle }) => {
   const ref = useRef()
+  const { addTodo } = useTodoStore();
 
 	function handleKeyDown(event) {
 		if (event.key === 'Enter'){
-			console.log(event.target.value)
+			addTodo(event.target.value)
 			event.target.value = ''
 		}
 	}
