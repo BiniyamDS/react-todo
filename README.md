@@ -11,7 +11,7 @@ Redone in `react`
 - [x] Make todo list stateful using zustand store
 - [x] Add new Todos
 - [x] Delete todo
-- [ ] Store in local storage for persistence
+- [x] Store in local storage for persistence
 
 ## Extended features
 
