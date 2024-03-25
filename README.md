@@ -20,4 +20,23 @@ Redone in `react`
 
 ## Features
 Adding a todo
-![My Image](img/empty.png) ![My Image](img/added.png)
+<div style="display: flex;">
+    <img src="img/empty.png" alt="Image 1" style="width: 50%;" />
+    <img src="img/enter.png" alt="Image 2" style="width: 50%;" />
+</div>
+    <img src="img/added.png" alt="Image 2" />
+<hr/>
+Check off multiple items and clear the ones that are completed
+<div style="display: flex;">
+    <img src="img/sel-multiple.png" alt="Image 1" style="width: 50%;" />
+    <img src="img/before-edit.png" alt="Image 2" style="width: 50%;" />
+</div>
+
+<hr/>
+Edit items
+<div style="display: flex;">
+    <img src="img/during-edit.png" alt="Image 1" style="width: 50%;" />
+    <img src="img/after-edit.png" alt="Image 2" style="width: 50%;" />
+</div>
+
+
