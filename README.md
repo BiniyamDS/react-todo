@@ -17,3 +17,7 @@ Redone in `react`
 
 - [x] Option to clear all completed todos
 - [x] Option to edit todos
+
+## Features
+Adding a todo
+![My Image](img/empty.png) ![My Image](img/added.png)
