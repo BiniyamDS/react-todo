@@ -10,9 +10,13 @@
 }
 
 .input-field {
-  @apply border-b-2 w-full outline-none h-10 text-2xl;
+  @apply border-b-2 w-full outline-none h-6 text-xl;
 }
 
 .btn {
   @apply mr-1 p-2 rounded-lg my-2 text-white
+}
+
+.btn-animated {
+  @apply  transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-100;
 }

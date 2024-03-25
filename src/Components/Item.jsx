@@ -19,14 +19,14 @@ const Item = ({ item }) => {
         checked={item.complete}
       />
       <label
-        className={item.complete ? 'text-xl text-gray-400' : 'text-xl'}
+        className={item.complete ? 'text-lg text-gray-400' : 'text-lg'}
         htmlFor='todo'>
         {item.text}
       </label>
       <MicroModal
         trigger={open => (
           <button
-            className='ml-auto'
+            className='ml-auto btn-animated'
             onClick={open}>
             <FontAwesomeIcon icon={faPenToSquare} />
           </button>
@@ -39,7 +39,7 @@ const Item = ({ item }) => {
         )}
       </MicroModal>
       <button
-        className='ml-4'
+        className='ml-4 btn-animated'
         onClick={() => deleteTodo(item.id)}>
         <FontAwesomeIcon icon={faTrashCan} />
       </button>

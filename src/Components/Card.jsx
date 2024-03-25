@@ -13,14 +13,14 @@ const Card = ({ children }) => {
     setShow(prevShow => !prevShow);
   }
   return (
-    <div className='bg-white p-10 shadow-lg rounded-3xl w-1/4'>
+    <div className='bg-white p-10 shadow-lg rounded-3xl w-1/2'>
       <div className='flex'>
-        <h1 className='font-bold text-4xl mb-8'>Todo</h1>
+        <h1 className='font-bold text-2xl mb-8'>Todo</h1>
         {showClear && (
           <button
             onClick={clearCompleted}
             className='ml-auto mb-8 bg-red-600 px-4 rounded-lg text-white hover:bg-red-700'>
-            Clear completed
+            Clear
           </button>
         )}
       </div>
@@ -30,7 +30,7 @@ const Card = ({ children }) => {
       ) : (
         <button
           onClick={toggleAdd}
-          className='bg-gray-300 w-full rounded-lg p-2 mt-2'>
+          className='bg-gray-300 w-full rounded-lg p-2 mt-2 hover:bg-gray-400'>
           Add Todo
         </button>
       )}
